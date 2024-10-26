@@ -6,7 +6,7 @@ class ProjectOne:
         # create spark session
         spark = SparkSession.builder \
             .appName("PySpark project") \
-            .master("spark://172.19.0.2:7077") \
+            .master("spark://172.19.0.3:7077") \
             .getOrCreate()
         
         dataframe = spark.createDataFrame([

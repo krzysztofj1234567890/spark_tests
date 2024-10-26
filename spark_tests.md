@@ -20,6 +20,14 @@ kj/bin/pip install pytest
 source kj/bin/activate
 ```
 
+### Install java
+
+```
+java -version
+sudo apt-get install openjdk-8-jdk
+java -version
+```
+
 ## Run spark
 
 ```
@@ -31,8 +39,11 @@ Upen UI:
 http://localhost:8080/
 ```
 
-## Run pyspark applications
+## Pyspark applications
 
+### Test: Hello World
+
+Run:
 ```
 kj/bin/python3 applications/application_one.py
 ```
