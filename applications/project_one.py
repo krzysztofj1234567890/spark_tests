@@ -16,7 +16,7 @@ class ProjectOne:
             ])
 
         # show
-#        dataframe.show()
+        dataframe.show()
 
         # count
 #        dataframe.count()

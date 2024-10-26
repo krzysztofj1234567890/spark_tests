@@ -4,6 +4,11 @@
 
 ### Install python virtual env
 
+#### Install python
+```
+sudo apt install python3.9
+```
+
 #### Setup virtual environment 
 ```
 python3 -m venv kj
@@ -54,3 +59,32 @@ Run:
 kj/bin/python3 applications/application_one.py
 ```
 
+
+# Run spark from command line
+
+https://hub.docker.com/_/spark
+
+```
+docker run -it spark:python3 /opt/spark/bin/pyspark
+```
+
+## Test 1: 
+
+```
+from pyspark.sql import Row
+dataframe = spark.createDataFrame([
+                Row(a=1, b=2., c='string1' ),
+                Row(a=2, b=3., c='string2' ),
+                Row(a=4, b=5., c='string3' )
+            ])
+dataframe.show()
+exit() 
+```
+
+
+
+# References
+
+Spark compatibility matrix: https://sparkbyexamples.com/spark/spark-versions-supportability-matrix/
+
+Spark docker image to use: https://hub.docker.com/_/spark
