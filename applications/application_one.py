@@ -15,15 +15,19 @@ def main():
     handler.setFormatter(formatter)
     logger.addHandler(handler)
 
-    logger.info('===================================>> pyspark project')
-    logger.info('===================================>> pyspark project')
-    logger.info('===================================>> pyspark project')
-    logger.info('===================================>> pyspark project')
-    logger.info('===================================>> pyspark project')
+    logger.info('===================================>> pyspark project START')
+    logger.info('===================================>> pyspark project START')
+    logger.info('===================================>> pyspark project START')
+    logger.info('===================================>> pyspark project START')
+    logger.info('===================================>> pyspark project START')
     project = ProjectOne()
     project.run()
 
-    logger.info('END')
+    logger.info('===================================>> pyspark project END')
+    logger.info('===================================>> pyspark project END')
+    logger.info('===================================>> pyspark project END')
+    logger.info('===================================>> pyspark project END')
+    logger.info('===================================>> pyspark project END')
 
 if __name__ == '__main__':
     main()

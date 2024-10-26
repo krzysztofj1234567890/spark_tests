@@ -6,7 +6,7 @@ class ProjectOne:
         # create spark session
         spark = SparkSession.builder \
             .appName("PySpark project") \
-            .master("spark://172.19.0.3:7077") \
+            .master("spark://172.19.0.1:7077") \
             .getOrCreate()
         
         dataframe = spark.createDataFrame([
@@ -16,14 +16,20 @@ class ProjectOne:
             ])
 
         # show
-        dataframe.show()
+#        dataframe.show()
 
         # count
-        dataframe.count()
+#        dataframe.count()
 
         # select
-        spark.sql( "SELECT * FROM dataframe" ).collect()
+#        spark.sql( "SELECT * FROM dataframe" ).collect()
 
-        dataframe.printSchema()
+        # print
+#        dataframe.printSchema()
 
+        # write to file
+#        dataframe.write.csv("kj_test.csv")
 
+        # stop spark session
+        spark.stop() 
+        

@@ -34,10 +34,16 @@ java -version
 docker-compose up
 ```
 
-Upen UI:
+Open UI:
 ```
 http://localhost:8080/
 ```
+
+Open jupyter notebook:
+```
+http://localhost:8888
+```
+
 
 ## Pyspark applications
 
